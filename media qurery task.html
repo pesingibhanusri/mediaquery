@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  a{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 10px;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+  }
+.container{
+    display: grid;
+    grid-template-areas: "header1 header2"
+                          "nav   main"
+                            "footer main" ;
+ 
+}
+  .img1{
+    grid-area: header1;
+  }
+  .img2{
+    grid-area: header2;
+  }
+  .img3{
+    grid-area: nav;
+  }
+  .img4{
+    grid-area: main;
+  }
+  .img5{
+    grid-area: footer;
+  }
+img{
+    height:100%;
+    width: 100%;
+}
+#about{ 
+  text-align: center;
+}
+#center{
+  height: 350px;
+  width: 200px;
+}
+  .footer{
+    text-align: center;
+   
+  }
+  input{
+    height: 25px;
+    width: 500px;
+  }
+  @media screen and (576px < width) and (width < 768px)
+      {
+        .nav{
+          display: flex;
+         
+
+        }
+        .container{
+          display: flex;
+          flex-direction: column;
+        }
+        #about{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      
+</style>
+</head>
+<body>
+    <nav class="nav">
+       <a href="#article">MY ART</a>
+       <a href="#about">ABOUT</a> 
+    </nav>
+
+    <div id="article" class="container">
+        <img class="container img1" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0HKCrveCrXqb4UpHn3b927ygdjWjNL_yqhLdDb7dFA3_plhFG" alt="img1">
+       
+     <img class="container img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhxem5ZjVx7Mb_uukUPr1UQ1lNIcYtRtH29OUX0OjhLGRcShJ5" alt="monkey"  >
+     <img  class="container img3" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlvdUClrsKXgMOOw9UC7YPg0MkJznHIQVzel-AMydLubUJ78rh" alt="man"  >
+     <img  class="container img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpAzI-Y7LAGAK2m4JrBpaMFB76Mgzxu52dyRl5688y89psmXX" alt="office" >
+     <img  class="container img5" src="https://www.w3schools.com/w3images/streetart5.jpg" alt="heart">
+    </div><br><br>
+    
+    <div id="about">
+ <p style="font-size: 30px ;">About</p><br><br>
+ <div>
+    <img  id="center" src="https://www.w3schools.com/w3images/boy.jpg" >
+ </div>
+ <div><p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem<br> ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut <br>rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent<br> tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam <br>non fringilla.
+<p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: deeppink; font-size: 20px;">Do not hesitate to contact me!</p>
+</div>
+
+    </div>
+    <div class="footer">
+        
+        <label for="name">Name</label><br>
+     <input type="text" id="name" name="name"><br>
+       
+       
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+           
+           
+           <label for="message">Message</label><br>
+           <input type="text" id="name" name="name"><br><br>
+            
+             
+            <input type="submit" name="submit" value="submit"><br><br>
+             
+            
+            <p>powerd by <a href="link" style="font-size: small; color: black; padding: 0px;" >w3.css</a></p>
+    </div>
+
+</body>
+
+</html>
